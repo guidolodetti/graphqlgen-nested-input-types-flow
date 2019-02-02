@@ -1,0 +1,13 @@
+scalar String
+
+input MyType {
+  something: String
+}
+
+input MyInput {
+  myType: MyType
+}
+
+type Mutation {
+  test(customInput: MyInput): String
+}

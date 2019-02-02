@@ -1,0 +1,12 @@
+language: flow
+
+schema: ./src/schema.graphql
+models:
+  files:
+    - ./src/models.js
+
+output: ./src/generated/graphqlgen.js
+
+resolver-scaffolding:
+  output: ./src/generated/tmp-resolvers/
+  layout: file-per-type
